@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        color: rgb(33, 214, 33);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:visited{
+        color: green;
+    }
+
+    a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+
+    a:active{
+        color: chartreuse;
+    }
+
+    .especial::before{
+        content:"#" ;
+        color: aquamarine;
+    }
+
+    .especial::after{
+        content: "[link]";
+        text-decoration: none;
+        font-weight: normal;
+        color: aquamarine;
+    }
+</style>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+       <li><a href="#" class="especial">Repositorio do github</a></li>
+       <li><a href="#">Perfil do insta</a></li>
+       <li><a href="#">Perfil do linkedin</a></li>
+    </ul>
+</body>
+</html>
