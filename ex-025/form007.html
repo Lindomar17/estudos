@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <optgroup label="Região Sul">
+                    <option value="RJ">Paraná</option>
+                    <option value="SP">Rio Grande Do Sul</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio De Janeiro</option>
+                    <option value="SP" selected>São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+
+                <optgroup label="Região Centro Oeste">
+                    <option value="CE">Goiás</option>
+                    <option value="PE">Mato Grosso</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="CE">Pará</option>
+                    <option value="PE">Amazonas</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="20" rows="5" placeholder="Digite Sua Mensagem aqui..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Eviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
